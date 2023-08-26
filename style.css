@@ -1,0 +1,71 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   background-color: white;
+   justify-content: center;
+}
+.calculator{
+   z-index: 1;
+   width: 200px;
+   margin: 20px auto;
+   backdrop-filter: blur(10px);
+   box-shadow: 1px 1px 10px #bbb;
+   border-radius: 20px;
+   padding: 10px;
+}
+.calculator input{
+   width: 95%;
+   height: 60px;
+   resize: none;
+   background-color: transparent;
+   color: #777;
+   font-size: 16px;
+   border: none;
+   outline: 0;
+   padding: 5px 10px;
+   margin: 10px 2.5%;
+   border-radius: 10px;
+   box-shadow: 3px 3px 3px 1px #ccc inset, 3px 4px 3px 0px #ccc, -6px -6px 5px 0px white inset, -1px -1px 20px 4px white;
+}
+.calculator span{
+   color: #999;
+   background-color: white;
+   box-shadow: 2px 2px 5px #ccc;
+   border-radius: 10px;
+   width: 90%;
+   height: 90%;
+   padding: 10px 0;
+   text-align: center;
+   border: .5px solid #eeeeee0d;
+   transition: .3s ease;
+   cursor: pointer;
+}
+.back-letter,.num-equal,
+.num-dot,.num-minus,
+.num-plus,.num-mul,
+.num-div{
+   color: #111 !important;
+}
+.calculator span:hover{
+   color: #333;
+   box-shadow: 2px 2px 3px 1px #ccc,-2px -2px 5px #ccc;
+}
+.clear{
+   color: red!important;
+   grid-column: 1/3;
+}
+.numbers .num-equal{
+   grid-column: 3/5;
+   color: green!important;
+   font-weight: bold;
+}
+.numbers{
+      display: grid; 
+      grid-template-columns: repeat(4,1fr);
+      color: rgb(255, 254, 252);
+      gap: 5px;
+      padding: 5px;
+}
